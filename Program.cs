@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace NET22_OOP_8
 {
@@ -31,6 +34,7 @@ namespace NET22_OOP_8
             foreach (var item in EmpStack)
             {
                 Console.WriteLine(item); //Försök skriva ut alla items FORTSÄTT HÄR
+               // TODO Efter varje rad eller element ska du skriva ut hur många items det finns kvar i Stacken.
             }
 
             //Console.WriteLine($"{Emp1.EmpID}");

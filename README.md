@@ -8,17 +8,17 @@ Denna labb handlar om att använda två vanliga generics typer inom C#. Du komme
 
 ## Del 1 – Stack
 
-- [ ]  Skapa en klass
-    - [ ]  Du ska skapa en klass som heter `Employee`
-    - [ ]  Denna klass ska ha flera egenskaper som ID, Name, Gender, Salary.
+- [x]  Skapa en klass
+    - [x]  Du ska skapa en klass som heter `Employee`
+    - [x]  Denna klass ska ha flera egenskaper som ID, Name, Gender, Salary.
 
-- [ ]  Skapa en Stack med objekten
-    - [ ]  I `Main()`-metoden ska du skapa fem objekt av klassen med olika ID, name, gender och salary.
-    - [ ]  Sedan ska du skapa en `Stack` och lägga till de fem objekten du skapat med `Push()` i Stacken.
-- [ ]  Skriv ut alla objekt i din Stack
-    - [ ]  Skriv ut alla objekt i din Stack.
-    - [ ]  Du måste använda en foreach-loop för att skriva ut alla element i stacken
-    - [ ]  Efter varje rad eller element ska du skriva ut hur många items det finns kvar i Stacken.
+- [x]  Skapa en Stack med objekten
+    - [x]  I `Main()`-metoden ska du skapa fem objekt av klassen med olika ID, name, gender och salary.
+    - [x]  Sedan ska du skapa en `Stack` och lägga till de fem objekten du skapat med `Push()` i Stacken.
+- [x]  Skriv ut alla objekt i din Stack
+    - [x]  Skriv ut alla objekt i din Stack.
+    - [x]  Du måste använda en foreach-loop för att skriva ut alla element i stacken
+    - []  Efter varje rad eller element ska du skriva ut hur många items det finns kvar i Stacken.
 - [ ]  Hämta alla genom Pop-metoden
     - [ ]  Hämta alla objekt i stacken genom `POP()`-metoden och skriv ut dem
     - [ ]  Efter varje rad eller element ska du skriva ut hur många items som finns kvar i stacken.

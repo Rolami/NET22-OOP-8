@@ -1,20 +1,44 @@
-﻿namespace NET22_OOP_8
+﻿using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NET22_OOP_8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Bla bla bla ");
+            Employee Emp1 = new("Richard", "Raal", "M", 35000);
+            Employee Emp2 = new("Stephen", "Fry", "M", 53230);
+            Employee Emp3 = new("Emma", "Watson", "F", 49285);
+            Employee Emp4 = new("Grim", "Reaper", "O", 40500);
+            Employee Emp5 = new("Sandy", "Merryweather", "F", 34574);
+
+
+           
+            Stack EmpStack = new();
+
+            EmpStack.Push(Emp1);
+            EmpStack.Push(Emp2);
+            EmpStack.Push(Emp3);
+            EmpStack.Push(Emp4);
+            EmpStack.Push(Emp5);
+
+
+            foreach (var item in EmpStack)
+            {
+                Console.WriteLine(item); //Försök skriva ut alla items FORTSÄTT HÄR
+            }
+
+            //Console.WriteLine($"{Emp1.EmpID}");
+            //Console.WriteLine($"{Emp2.EmpID}");
+
             Console.ReadKey();
-
-
         }
-        Employee Emp1 = new(1, "Richard", "Raal", "M", 35000);
-        Employee Emp2 = new(2, "Stephen", "Fry", "M", 53230);
-        Employee Emp3 = new(3, "Emma", "Watson", "F", 49285);
-        Employee Emp4 = new(4, "Grim", "Reaper", "O", 40500);
-        Employee Emp5 = new(5, "Samanta", "Merryweather", "F", 34574);
+
 
     }
 }

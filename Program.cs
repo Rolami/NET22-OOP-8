@@ -21,7 +21,7 @@ namespace NET22_OOP_8
             Employee Emp5 = new("Sandy", "Merryweather", "F", 34574);
 
 
-           
+
             Stack empStack = new();
 
             empStack.Push(Emp1);
@@ -30,25 +30,64 @@ namespace NET22_OOP_8
             empStack.Push(Emp4);
             empStack.Push(Emp5);
 
+            Console.WriteLine("\n###########################\n");
+
             Console.WriteLine("Data shown with WriteLine");
             foreach (var person in empStack)
             {
                 Console.WriteLine(person);
                 Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a WriteLine.
             }
+            Console.WriteLine("\n###########################\n");
+
             Console.WriteLine("Data shown with Pop: ");
 
             while (empStack.Count > 0)
             {
-                empStack.Pop();
+
+                Console.WriteLine(empStack.Pop());
                 Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: Will change when pop removes from the stack..
 
             }
 
+            empStack.Push(Emp1);
+            empStack.Push(Emp2);
+            empStack.Push(Emp3); //I know it's the same, but I saved code
+            empStack.Push(Emp4);
+            empStack.Push(Emp5);
 
-            Console.ReadKey();
+            Console.WriteLine("\n###########################\n");
+
+            Console.WriteLine("Data shown with Peeking:");
+
+            foreach (var person in empStack)
+            {
+                Console.WriteLine(person);
+                empStack.Peek();
+                Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
+            }
+            Console.WriteLine("Manual peeking: ");
+            Console.WriteLine(empStack.Peek());
+            Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
+            Console.WriteLine(empStack.Peek());
+            Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
+
+            if (empStack.Contains(Emp3))
+            {
+                Console.WriteLine($"\nThe stack contains Emp3");
+            }
+            else
+            {
+                Console.WriteLine($"\nThe stack does not contain Emp3");
+            }
+
+
+
+
+            Console.ReadKey(); //I have it as a end of program
         }
 
-
     }
+
+
 }

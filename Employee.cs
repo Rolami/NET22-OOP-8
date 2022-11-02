@@ -31,7 +31,8 @@ namespace NET22_OOP_8
         }
         public override string ToString()
         {
-            return $"{d}\nEmployee nr: {EmpID}\n{LastName}, {FirstName}\nGender:{Gender}\nSalary: {Salary}\n";
+            return $"{d}\n\nEmployee nr: {EmpID}\n{LastName}, {FirstName}\nGender: {Gender}\nSalary: {Salary}\n";
         }
+
     }
 }

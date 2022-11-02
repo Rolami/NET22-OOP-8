@@ -22,23 +22,29 @@ namespace NET22_OOP_8
 
 
            
-            Stack EmpStack = new();
+            Stack empStack = new();
 
-            EmpStack.Push(Emp1);
-            EmpStack.Push(Emp2);
-            EmpStack.Push(Emp3);
-            EmpStack.Push(Emp4);
-            EmpStack.Push(Emp5);
+            empStack.Push(Emp1);
+            empStack.Push(Emp2);
+            empStack.Push(Emp3);
+            empStack.Push(Emp4);
+            empStack.Push(Emp5);
 
-
-            foreach (var item in EmpStack)
+            Console.WriteLine("Data shown with WriteLine");
+            foreach (var person in empStack)
             {
-                Console.WriteLine(item); //Försök skriva ut alla items FORTSÄTT HÄR
-               // TODO Efter varje rad eller element ska du skriva ut hur många items det finns kvar i Stacken.
+                Console.WriteLine(person);
+                Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a WriteLine.
+            }
+            Console.WriteLine("Data shown with Pop: ");
+
+            while (empStack.Count > 0)
+            {
+                empStack.Pop();
+                Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: Will change when pop removes from the stack..
+
             }
 
-            //Console.WriteLine($"{Emp1.EmpID}");
-            //Console.WriteLine($"{Emp2.EmpID}");
 
             Console.ReadKey();
         }

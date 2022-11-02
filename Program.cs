@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Collections;
 
 namespace NET22_OOP_8
 {
@@ -58,28 +51,23 @@ namespace NET22_OOP_8
 
             Console.WriteLine("\n###########################\n");
 
-            Console.WriteLine("Data shown with Peeking:");
+            //Console.WriteLine("Data shown with Peeking:");
 
-            foreach (var person in empStack)
-            {
-                Console.WriteLine(person);
-                empStack.Peek();
-                Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
-            }
-            Console.WriteLine("Manual peeking: ");
+            //foreach (var person in empStack)
+            //{
+            //    Console.WriteLine(empStack.Peek());  //Denna del känns överflödig. 
+            //                                         //Hämta alla objekt igen med Peek-metoden - Vad betyder detta?
+
+            //    Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
+            //}
+
+            Console.WriteLine("Manual peeking:");
             Console.WriteLine(empStack.Peek());
             Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
             Console.WriteLine(empStack.Peek());
             Console.WriteLine("Items left in the stack: " + empStack.Count); //Output: 5. Will not change with a Peek.
 
-            if (empStack.Contains(Emp3))
-            {
-                Console.WriteLine($"\nThe stack contains Emp3");
-            }
-            else
-            {
-                Console.WriteLine($"\nThe stack does not contain Emp3");
-            }
+            Console.WriteLine(empStack.Contains(Emp3) ? "\nThe stack contains Emp3" : "\nThe stack does not contain Emp3");
 
 
 

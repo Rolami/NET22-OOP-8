@@ -34,8 +34,8 @@ Output av Del 1 - Stack
 
 ## Del 2 – List
 
-- [ ]  Skapa en List
-- [ ]  Lägg in fem objekt av klassen `Employee` i din List
+- [x]  Skapa en List
+- [x]  Lägg in fem objekt av klassen `Employee` i din List
 - [ ]  Skapa ett villkor för att kolla om ett visst item finns i listan genom `Contains()-`metoden. Om den finns så skriv ut "Employee2 object exists in the list" i konsollen, else "Employee2 object does not exist in the list".
 - [ ]  Använd sedan `Find()-`metoden för att hitta och skriva ut det första objektet i listan som har `Gender = "Male"`.
 - [ ]  Använd sedan `FindAll()-`metoden för att hitta och skriva ut alla items i listan som har `Gender = "Male"`

@@ -70,6 +70,17 @@ namespace NET22_OOP_8
             Console.WriteLine(empStack.Contains(Emp3) ? "\nThe stack contains Emp3" : "\nThe stack does not contain Emp3");
 
 
+            List<Employee> empList = new();
+
+            empList.Add(new Employee("Richard", "Raal", "Male", 35000));
+            empList.Add(new Employee("Stephen", "Fry", "Male", 53230));
+            empList.Add(new Employee("Emma", "Watson", "Female", 49285));
+            empList.Add(new Employee("Grim", "Reaper", "Other", 40500));
+            empList.Add(new Employee("Sandy", "Merryweather", "Female", 34574));
+
+            string x = empList.FindAll(empList => empList.Gender == "Male");
+
+
 
 
             Console.ReadKey(); //I have it as a end of program

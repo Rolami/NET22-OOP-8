@@ -9,7 +9,7 @@ namespace NET22_OOP_8
     internal class Employee
     {
     
-        private static int accountNumberSeed = 13370000;
+        private static int accountNumberSeed = 100;
 
         public double EmpID { get; set; } //TODO, Make seeded number
         public string FirstName { get; set; }

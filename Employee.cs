@@ -16,7 +16,8 @@ namespace NET22_OOP_8
         public string LastName { get; set; }
         public string Gender { get; set; } //M,F,O
         public double Salary { get; set; }
-        public string d = "________________________"; //Divider
+
+
 
 
         public Employee(string C_FName,string C_LName,string C_Gender,double C_Salary)
@@ -31,6 +32,9 @@ namespace NET22_OOP_8
         }
         public override string ToString()
         {
+            string d = "________________________"; //Divider
+
+
             return $"{d}\n\nEmployee nr: {EmpID}\n{LastName}, {FirstName}\nGender: {Gender}\nSalary: {Salary}\n";
         }
 
